@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fieldnote &mdash; study planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+<div class="app-shell">
+  <nav class="sidebar">
+    <div class="sidebar-brand">
+      <div class="mark">Fieldnote</div>
+      <div class="tagline">Study planner</div>
+    </div>
+    <ul class="nav-list" id="nav-list">
+      <li class="nav-item" data-view="dashboard"><span class="dot"></span>Dashboard</li>
+      <li class="nav-item" data-view="schedule"><span class="dot"></span>Schedule</li>
+      <li class="nav-item" data-view="tasks"><span class="dot"></span>Tasks</li>
+      <li class="nav-item" data-view="subjects"><span class="dot"></span>Subjects</li>
+      <li class="nav-item" data-view="exams"><span class="dot"></span>Exams</li>
+      <li class="nav-item" data-view="planner"><span class="dot"></span>AI planner</li>
+      <li class="nav-item" data-view="progress"><span class="dot"></span>Progress</li>
+    </ul>
+    <div class="sidebar-footer">Built for real use, not just a demo.</div>
+  </nav>
+
+  <main class="main" id="main">
+    <!-- views are rendered here by app.js -->
+  </main>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/components.js"></script>
+<script src="/js/view_dashboard.js"></script>
+<script src="/js/view_schedule.js"></script>
+<script src="/js/view_tasks.js"></script>
+<script src="/js/view_subjects.js"></script>
+<script src="/js/view_exams.js"></script>
+<script src="/js/view_planner.js"></script>
+<script src="/js/view_progress.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
